@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="group12StyleSheet.css">
+  <title>Instructor Connector</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+    
+    /* Style for Instructor Connector section */
+    
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="logo.jpg" alt="Logo Description">
+    </a>
+    <nav class="nav-items">
+      <a href="Fitness Challenge.html">Fitness Challenge & Rewards</a>
+      <a href="nutrition.html">Nutrition Navigation</a>
+      <a href="Mindful Wellness Hub.html">Mindful Wellness Hub</a>
+      <a href="sleep.html">Sleep Bliss Guide</a>
+      <a href="holistic 3.html">Holistic Health Resources</a>
+      <a href="instructorconnector.html">Instructor</a>
+      <a href="aboutus.html">About us</a>
+      <a href="output.html">
+        <img src="profile1.png" alt="Profile Image">
+        <span>Profile</span>
+      </a>
+    </nav>
+  </header>
+<!-- ... (previous HTML code) ... -->
+
+<section class="connector">
+  <h2>Contact Us</h2>
+  <p>Connect with our instructor for assistance:</p>
+  <p>Encik Kamal: kamal@gmail.com</p>
+  <p>Encik Sureman: sureman21@gmail</p>
+  <a href="#" class="contact-btn" onclick="toggleChat('instructor')">Instructor Chat</a>
+  <a href="#" class="contact-btn" onclick="toggleChat('user')">User Interaction</a>
+  
+  <!-- Hidden forms -->
+  <div id="instructorForm" class="form-box" style="display: none;">
+    <!-- Instructor Chat Form -->
+    <form id="instructorChatForm">
+      <p>Please enter your email to be contacted.</p>
+      <label for="instructorEmail">Email:</label>
+      <input type="email" id="instructorEmail" name="instructorEmail">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div id="userForm" class="form-box" style="display: none;">
+    <!-- User Interaction Form -->
+    <form id="userInteractionForm">
+      <p>Please enter your No Phone to be added in group.</p>
+      <label for="userNo">No Phone:</label>
+      <input type="NoPhone" id="userNoPhone" name="userNoPhone">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+
+
+
+<script>
+  function toggleChat(chatType) {
+    const instructorForm = document.getElementById('instructorForm');
+    const userForm = document.getElementById('userForm');
+
+    if (chatType === 'instructor') {
+      instructorForm.style.display = 'block';
+      userForm.style.display = 'none';
+    } else if (chatType === 'user') {
+      instructorForm.style.display = 'none';
+      userForm.style.display = 'block';
+    }
+  }
+</script>
+
+</body>
+</html>
+

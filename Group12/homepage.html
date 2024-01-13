@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="group12StyleSheet.css">
+
+  <title>F&H </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+  	
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">
+	<img src="logo.jpg" alt="Logo F&H">
+	</a>
+    <nav class="nav-items">
+		<a href="login.html">Sign up/ Login in</a>    	  
+    </nav>
+  </header>
+  
+  <main>
+  
+	<!-- Slideshow Section -->
+		<div class="intro">
+      
+	  <h2>Healthy And Fitness</h2>
+      <p>Take care of your body. It's the only place you have to live.</p>
+      <button><a href="login.html"> Join Us</a></button>
+    </div>
+	</div>
+	
+    <div class="achievements">
+      <div class="work">
+        <i class="fas fa-atom"></i>
+        <p class="work-heading">TRANSFORMATION TALES</p>
+        <p class="work-text">Dive into inspiring success stories and fitness journeys that prove the impact of commitment and wellness.</p>
+      </div>
+      <div class="work">
+        <i class="fas fa-skiing"></i>
+        <p class="work-heading">FITNESS EXPERTISE</p>
+        <p class="work-text">Unlock your potential with our tailored fitness plans and expert guidance for a healthier, happier you.</p>
+      </div>
+      <div class="work">
+        <i class="fas fa-ethernet"></i>
+        <p class="work-heading">WELLNESS HUB</p>
+        <p class="work-text">Join our thriving community. Connect, motivate, and stay informed on the latest in health and fitness for a vibrant lifestyle.</p>
+      </div>
+    </div>
+    
+  </main>
+  <footer class="footer">
+    <div class="copy">&copy; 2023 F&H</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>More Info</span>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="links">
+        <span>Social Links</span>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const introContainer = document.querySelector(".intro");
+      const slides = ["slideshow3.jpg", "slideshow2.jpg", "slideshow6.jpg"];
+      let currentSlide = 0;
+
+      function changeSlide() {
+        introContainer.style.backgroundImage = `url(${slides[currentSlide]})`;
+        currentSlide = (currentSlide + 1) % slides.length;
+      }
+
+      setInterval(changeSlide, 10000); // Change slide every 10 seconds
+    });
+  </script>
+ 
+</body>
+
+</html>

@@ -1,0 +1,766 @@
+  /* CSS for header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color:#1D3124 ;
+	  position:relative;
+	  z-index: 1000;
+    }
+
+    .header .logo {
+      font-size: 25px;
+      font-family: 'Sriracha', cursive;
+      color: #000;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+	
+	.header .logo img {
+    width: 150px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height as needed */
+	}
+
+    .nav-items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1D3124;
+      margin-right: 20px;
+    }
+
+    .nav-items a {
+      text-decoration: none;
+      color: #ffffff;
+      padding: 15px 20px;
+	  display: flex;
+	  flex-direction: column; /* Stack the text and image vertically */
+      align-items: center; /* Center the text and image vertically */
+    }
+	
+	.nav-items img {
+      width: 60px; /* Adjust the width to match the logo */
+      height: 50px; /* Adjust the height to match the logo */
+      display: block; /* Make the image a block element to allow for margin/padding */
+      margin-bottom: 5px; /* Add some space between the image and the text */
+    }
+
+    .nav-items span {
+      color: #ffffff;
+    }
+
+    /* Style for the hover effect */
+    .nav-items a:hover {
+      font-weight: bold !important;
+      color: #728C69 !important;
+    }
+	body {
+      margin: 0;
+      box-sizing: border-box;
+      background-color: #BACEC1;
+    }
+	
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      animation: slideShow 10s infinite;
+      position: relative;
+      margin-top: -200px;
+      margin-bottom: -150px;
+      height: 800px; /* Adjust the height as needed */
+      color: #fff;
+	  z-index: 1;
+    }
+
+    .intro h2 {
+      font-size: 100px;
+      color: #7f9f72;
+      margin: 10px 0;
+      text-shadow: -2px -2px 0 #2C5f2D, 2px -2px 0 #2C5f2D, -2px 2px 0 #2C5f2D, 2px 2px 0 #2C5f2D;
+    }
+
+    .intro p {
+      font-size: 30px;
+      color: #11351E;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
+
+    .achievements {
+      display: flex;
+      justify-content: center;
+      align-items:flex-wrap;
+	  position: relative;
+      z-index: 1; /* Set a higher z-index value */
+	  margin-top:100px;
+    }
+
+    .achievements .work {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 80px; /* Add margin to separate items */
+      text-align: center; /* Center text within each work item */
+	  z-index:1;
+	  position: relative;
+    }
+
+    .achievements .work i {
+      width: fit-content;
+      font-size: 50px;
+      color: #333333;
+      border-radius: 50%;
+      border: 2px solid #333333;
+      padding: 10px;
+	  position: relative; /* Add relative positioning */
+	  z-index: 5; /* Set a higher z-index for the icon */
+    }
+
+    .achievements .work .work-heading {
+      font-size: 20px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .achievements .work .work-text {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    .about-me {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 80px;
+      border-top: 2px solid #eeeeee;
+    }
+
+    .about-me img {
+      width: 500px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .about-me-text h2 {
+      font-size: 30px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .about-me-text p {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    /* CSS for footer */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #302f49;
+      padding: 40px 80px;
+    }
+
+    .footer .copy {
+      color: #fff;
+    }
+
+    .bottom-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 0;
+    }
+
+    .bottom-links .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .bottom-links .links span {
+      font-size: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .bottom-links .links a {
+      text-decoration: none;
+      color: #a1a1a1;
+      padding: 10px 20px;
+    }
+
+    @keyframes slideShow {
+      0% {
+        background-image: url("slideshow3.jpg");
+      }
+      33.33% {
+        background-image: url("slideshow2.jpg");
+      }
+      66.66% {
+        background-image: url("slideshow6.jpg");
+      }
+      100% {
+        background-image: url("slideshow3.jpg");
+      }
+    }
+	/*homepage.html*/
+	 .intro button {
+      background-color: #A9BA9D;
+      color: #FFFFFF;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+    }
+	
+	/*Fitness Challenge.html*/
+	
+	
+	.intro-section {
+      background-color: #1D3124;
+      color: #ffffff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 10px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      margin: 20px;
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .text-box {
+      flex: 4;
+    }
+
+    .title {
+      font-size: 20px;
+      line-height: 1.5;
+      color: #1D3124;
+    }
+
+    .image-oval img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+	background-color: #ffffff;
+    border-radius: 10px;
+	}
+
+	.reward {
+    display: flex;
+	gap:10px;
+    justify-content:center /* Adjust this based on your preference */
+    align-items: center;
+	}
+	.reward img {
+    max-width: 400%;
+    height: 370px;
+    border-radius: 5px;
+     margin: 0 5px;
+	 display :block;
+	}
+	
+	.progressVisuals img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: block;
+    margin: auto; /* Centering the image */
+	}
+
+	/* Challenge Media - Video */
+	.challengeMedia video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: block;
+    margin: auto; /* Centering the video */
+	}
+
+	/* Challenge Media - Image */
+	.challengeMedia img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: block;
+    margin: auto; /* Centering the image */
+	}
+	
+	
+	table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+	}
+
+	table, th, td {
+    border: 2px solid #ccc;
+	}
+
+	th, td {
+    padding: 10px;
+    text-align: left;
+	}
+
+	.progressVisuals img {
+    max-width: 100%;
+    height: auto;
+	}
+
+	.challengeMedia video,
+	.challengeMedia img {
+    max-width: 100%;
+    height: auto;
+	}
+	
+	 .boxes {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      flex: 0 0 30%;
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .box-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #1D3124;
+      margin-bottom: 10px;
+    }
+	.container {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+	}
+	.header span{
+	border :none;
+	}
+	
+	
+	
+	#rewardSystem, #progressMonitoring,#challengeDescriptions{
+	background-color: #ECFFDC/* Add your preferred background color */
+	}
+	/*nutrition.html*/
+	video {
+      max-width: 100%; /* Ensure the image is responsive */
+	  height:450px;
+	  width: 1000px;
+	  padding:20px;
+    }
+	.left-box {
+	border: 5px solid #FFF;
+	border-radius: 10px;
+	width: 45%; /* Adjust the width as needed */
+	float: left;
+	padding: 30px; /* Adjust the padding as needed */
+	box-sizing: border-box;
+	margin-top: 20px;
+	margin-right: 2.5%; /* Adjust the gap between left and right boxes */
+	margin-left: 20px;
+	background-color: #f4f4f4; /* Add background color */
+	font-family: 'Arial', sans-serif; /* Specify font family */
+	}
+
+	.right-box {
+	width: 45%; /* Adjust the width as needed */
+	float: right;
+	box-sizing: border-box;
+	margin-top: 20px;
+	margin-left: 4.5%; /* Adjust the gap between left and right boxes */
+	}
+
+	.right-box img {
+	width: 80%; /* Ensure the image takes the full width of the container */
+	height: auto; /* Maintain the aspect ratio */
+	border-radius: 50%; /* Add border-radius for rounded corners */
+	overflow: hidden;
+	}
+	.left-box p {
+	color: #333; /* Dark text color */
+	font-size: 16px; /* Adjust font size */
+	line-height: 1.6; /* Adjust line height for readability */
+	margin-left : 20px;
+	}
+
+	.left-box h2 {
+	color: #20B2AA; /* Highlight color for headings */
+	font-size: 24px; /* Larger font size for headings */
+	margin-bottom: 15px; /* Add some space below headings */
+	}
+
+	
+	
+	/*Mindful Wellness Hub.html*/
+	.background-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-image: url("bck.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+
+    .hub-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  flex: 1; /* Distributes available space equally among sections */
+  margin: 10px auto; /* Center the section horizontally and add margin for separation */
+  max-width: 300px; /* Set a maximum width for each section */
+}
+
+    .hub-section h1,
+    .hub-section p {
+      margin: 10px 0;
+    }
+
+    /* Additional style for side-by-side hub-sections */
+    .hub-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    
+
+    .big-picture-container {
+      max-width: 800px;
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .big-picture img {
+      width: 90%;
+      height: 400px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 100px;
+    }
+
+    .square-container {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+    }
+
+    .square {
+      width: 60px;
+      height: 60px;
+      background-color: grey;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 10px;
+      border-radius: 50%;
+    }
+
+    .square span {
+      color: white;
+    }
+
+    /* Updated styles for images in the hub-section */
+    .hub-section img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      display: block;
+      margin: 0 auto;
+    }
+
+	#mentalHealthSection a {
+      color: white; /* Set the font color to white */
+      text-decoration: none; /* Remove default underline */
+    }
+
+	.stress-reduction-tips {
+    border: 2px solid #ddd;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+	}
+	
+	/*slepp.html*/
+	.image-section {
+      text-align: center;
+      margin-top: 20px; /* Adjust the margin as needed */
+	  
+    }
+
+    .image-section img {
+      max-width: 100%; /* Ensure the image is responsive */
+	  height:450px;
+	  width: 1250px;
+	  border: 5px solid #20B2AA; /* Add a border with the desired color */
+      border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+    }
+	 .image-section figcaption {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      margin: 0;
+      text-align: center;
+    }
+	
+	 .horizontal-divisions {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px; /* Adjust the margin as needed */
+    }
+	 .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+	  gap: 1px; /* Adjust the gap between columns as needed */
+	  margin: 5px;
+     
+     
+    }
+	.wrapper {
+	border: 5px solid #191970; /* Add a border with the desired color */
+	border-radius: 15px; /* Optional: Add border-radius for rounded corners */
+	overflow: hidden;
+    margin :10px;
+	}
+
+
+    .division {
+     background-color: #20B2AA;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+	 margin-bottom: 1 px;
+	 width: 100%
+	 border: 5px solid #fff; /* Add a border with the desired color */
+	 }
+
+    .division img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #1D3124;
+      border-radius: 10px;
+	}
+	.division p {
+      margin-top: 10px;
+      color: #1D3124; /* Text color */
+    }
+   
+    /*holistic 3.html*/
+	.box-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px; /* Adjust margin as needed */
+    }
+	
+	/*instructorconnector.html*/
+	/* Style for Instructor Connector section */
+    .connector {
+      text-align: center;
+      margin-top: 50px;
+	  background-color: #BACEC1; /* Set the background color */
+      padding: 20px; /
+    }
+
+    .contact-btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 8px 20px;
+      background-color: #728C69;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-btn:hover {
+      background-color: #556E56;
+    }
+    
+	/*aboutus.html*/
+	.about-us {
+      margin: 20px;
+      padding: 20px;
+      background-color: #ffffff;
+      text-align: center;
+    }
+
+    .about-us img {
+      width: 1500x; /* Adjust the width as needed */
+      height: 200px; /* Adjust the height as needed */
+      border-radius: 100%; /* Make the image circular */
+      margin-bottom: 20px;
+    }
+
+    .about-us p {
+      font-size: 18px;
+      color: #1D3124;
+    }
+
+    /* Team Section */
+    .team-section {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 20px;
+    }
+
+    .team-member {
+      text-align: center;
+      width: 250px;
+      margin: 20px;
+      padding: 10px;
+      background-color: #ffffff;
+      border-radius: 10px;
+    }
+
+    .team-member img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .team-member p {
+      font-size: 16px;
+      color: #1D3124;
+    }
+	
+	/*profile.html*/
+	form {
+      display: grid;
+      grid-gap: 10px;
+      background-color:#BACEC1;
+	  max-width: 600px; /* Set a maximum width for better readability on larger screens */
+	  margin: 0 auto; /* Center the form horizontally */
+    }
+    .form-group {
+      display: flex;
+      align-items: center;
+    }
+    .form-group.password {
+      display: flex;
+      align-items: center;
+    }
+    label {
+      font-weight: bold;
+      width: 150px;
+      margin-right: 10px;
+      text-align: right;
+    }
+    input, select {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+	  width:200%;
+    }
+    button {
+      padding: 10px 20px;
+      background-color:#1D3124 ;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    .cancel-btn {
+      padding: 10px 20px;
+      background-color: #ff0000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+	/*output.html*/
+	  label {
+      font-weight: bold;
+      width: 150px;
+      margin-right: 10px;
+      text-align: right;
+    }
+	
+
+    span {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+      display: inline-block;
+    }
+	
+	button.logout-button {
+	padding: 20px 30px; /* Adjust padding for a smaller size */
+	background-color: #4CAF50; /* Green color */
+	color: white;
+	border: none;
+	border-radius: 15px; /* Use a higher value for a more rounded shape */
+	cursor: pointer;
+	font-size: 20px; /* Adjust font size */
+	transition: background-color 0.3s ease;
+	}
+
+	button.logout-button:hover {
+	background-color: #45a049; /* Darker green color on hover */
+	}

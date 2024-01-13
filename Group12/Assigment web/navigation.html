@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple HTML HomePage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+    body {
+      margin: 0;
+      box-sizing: border-box;
+	  background-color:#BACEC1;
+    }
+
+    /* CSS for header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color:#1D3124 ;
+    }
+
+    .header .logo {
+      font-size: 25px;
+      font-family: 'Sriracha', cursive;
+      color: #000;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+	.header .logo img {
+    width: 150px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height as needed */
+	}
+
+    .nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #1D3124;
+      margin-right: 70px;
+    }
+
+    .nav-items a {
+      text-decoration: none;
+      color: #ffffff;
+      padding: 15px 20px;
+	  display: flex;
+	  flex-direction: column; /* Stack the text and image vertically */
+      align-items: center; /* Center the text and image vertically */
+    }
+	.nav-items img {
+    width: 60px; /* Adjust the width to match the logo */
+    height: 50px; /* Adjust the height to match the logo */
+	display: block; /* Make the image a block element to allow for margin/padding */
+    margin-bottom: 5px; /* Add some space between the image and the text */
+  }
+  .nav-items span {
+    color: #ffffff;
+  }
+  /* Style for the hover effect */
+  .nav-items a:hover,
+  .nav-items a:hover span {
+   font-weight:bold;
+	color:#728C69;
+  }
+
+	
+</style>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">
+	<img src="logo.jpg" alt="Logo Description">
+	</a>
+    <nav class="nav-items">
+	     <a href="#">Fitness Challenge & Rewards</a> 
+		  <a href="#">Nutrition Navigation</a>
+		   <a href="#">Mindfull Wellness Hub</a>
+			 <a href="#">Sleep Bliss Guide</a>
+				 <a href="#">Holistic Health Resources</a> 
+				  <a href="#">Instructor</a>
+					 <a href="#">About us</a> 
+		<a href="#"><img src="profile1.png" alt="Profile Image">
+		<span>Profile</span>
+      </a>
+     </nav>
+  </header>
+  </body>
+
+</html>

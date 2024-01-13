@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="group12StyleSheet.css">
+  <title>Holistic Health Resources</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+   
+    
+    .box {
+      box-sizing: border-box;
+      width: calc(33.33% - 20px); /* Adjust the width and margin as needed */
+      border: 1px solid #ddd; /* Border style */
+      padding: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .box {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+
+   
+	/* Introduction Section */
+    .introduction {
+      background-color: #F4F4F4;
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+      color: #333333;
+    }
+
+	/* Picture Section */
+    .picture-section {
+      text-align: center;
+      padding: 30px;
+    }
+
+    .picture-section img {
+      width: 100%;
+      height: 500px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+
+    /* Video Section */
+    .video-section {
+      text-align: center;
+      padding: 30px;
+    }
+
+	.video-container {
+	display: flex;
+	flex-direction: column; /* Arrange videos vertically */
+	align-items: center; /* Center videos horizontally */
+	}
+
+	.video-subsection {
+	width: 70%; /* Adjust the width of the video subsection */
+	margin-bottom: 20px;
+	}
+
+	.video-subsection iframe {
+	width: 110%; /* Make the video fill the width of the container */
+	height: 300px; /* Adjust the height as needed */
+	border: none;
+	border-radius: 8px;
+	}
+
+    /* Tips Section */
+    .tips-section {
+      background-color: #F4F4F4;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .tips-subsection {
+      margin-bottom: 20px;
+    }
+
+    /* Links Section */
+    .links-section {
+      background-color: #1D3124;
+      color: #ffffff;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .links-section a {
+      color: #ffffff;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+	.links-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	}
+
+	.article {
+	margin: 20px;
+	text-align: center;
+	}
+
+	img {
+	max-width: 100%;
+	height: auto;
+	}
+
+	h3 {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <a href="homepageafter.html" class="logo">
+      <img src="logo.jpg" alt="Logo Description">
+    </a>
+    <nav class="nav-items">
+      <a href="Fitness Challenge.html">Fitness & Rewards Challenge</a>
+      <a href="nutrition.html">Nutrition Navigation</a>
+      <a href="Mindful Wellness Hub.html">Mindful Wellness Hub</a>
+      <a href="sleep.html">Sleep Bliss Guide</a>
+      <a href="holistic 3.html">Holistic Health Resources</a>
+      <a href="instructorconnector.html">Instructor</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="output.html">
+        <img src="profile.png" alt="Profile Image">
+        <span>Profile</span>
+      </a>
+    </nav>
+  </header>
+
+
+  <section class="introduction">
+    <h2>Welcome to Holistic Health Resources</h2>
+    <p>Explore a wealth of information and resources to nurture your mind, body, and soul on the path to holistic well-being. Our curated content covers a wide range of topics, promoting a balanced and healthy lifestyle.</p>
+  </section>
+
+ 
+  <section class="picture-section">
+    <h2>Inspiring Images</h2>
+    <img src="introres.jpg" alt="Holistic Health Image">
+    <p>Discover inspiring images that resonate with the essence of holistic health and well-being.</p>
+  </section>
+
+  <!-- Box Container for side-by-side layout -->
+  <div class="box-container">
+
+    <!-- Video Section -->
+    <section class="box video-section">
+      <h2>Wellness Videos</h2>
+      <div class="video-container">
+    <div class="video-subsection">
+        <iframe src="https://www.youtube.com/embed/3eay48JwTPI?si=827bmZxK83PClaD_" allowfullscreen></iframe></div>
+    <div class="video-subsection">
+      <iframe src="https://www.youtube.com/embed/Ki605EYP7_Q?si=Qpoyo6dDvhbs0Q7j" allowfullscreen></iframe>
+    </div>
+	</div>
+      <p>Watch informative videos to guide you on your journey to holistic wellness.</p>
+    </section>
+
+    <!-- Links Section -->
+<section class="box links-section">
+  <h2>Explore More Articles</h2>
+
+  <!-- Nutrition Article with Image -->
+  <div class="article">
+    <img src="nutri.jpeg" alt="Nutrition Image">
+    <h3>Nutrition</h3>
+    <a href="https://www.nutrition.gov/" target="_blank">The Importance of Balanced Nutrition</a>
+  </div>
+
+  <!-- Medical Advice Article with Image -->
+  <div class="article">
+    <img src="medblog.jpeg" alt="Medical Advice Image">
+    <h3>Medical Advice</h3>
+    <a href="https://www.health.harvard.edu/topics/staying-healthy" target="_blank">Medical Harvard Blog</a>
+  </div>
+
+  <!-- Mental Health Article with Image -->
+  <div class="article">
+    <img src="beauty.jpeg" alt="Mental Health Image">
+    <h3>Beauty Health</h3>
+    <a href="https://www.everydayhealth.com/skin-beauty/all-articles/" target="_blank">Beauty and Health</a>
+  </div>
+</section>
+
+
+    <!-- Tips Section -->
+    <section class="box tips-section">
+      <h2>Healthy Lifestyle Tips</h2>
+      <div class="tips-subsection">
+        <br><b>Wellness</b>
+<br>-Cover topics like mindfulness, gratitude, and positivity.
+<br>-Discuss the benefits of hobbies and activities that promote overall well-being.
+<br>-Provide information on alternative therapies and holistic approaches to health.
+<br>-Encourage a balanced approach to life, addressing physical, mental, and emotional well-being.
+      </div>
+
+      <div class="tips-subsection">
+        <p><br><b>Healthy Habits</b>
+
+<br>-Create content on habit formation and breaking unhealthy habits.
+<br>-Offer practical tips for incorporating healthier choices into daily routines.
+<br>-Emphasize the importance of consistency over time for lasting results.
+<br>-Provide resources for tracking and monitoring progress.</p>
+      </div>
+
+<div class="tips-subsection">
+        <p><b>Preventive Health</b>
+
+<br>-Share information on routine check-ups and preventive screenings.
+<br>-Discuss the importance of vaccinations and immunizations.
+<br>-Provide tips for recognizing and managing common health risks.
+<br>-Promote a proactive approach to health through regular self-assessments.</p>
+      </div>
+
+<div class="tips-subsection">
+	<p><b>Family Health</b>
+
+<br>-Offer tips on promoting a healthy lifestyle for the entire family.
+<br>-Provide family-friendly recipes and activities for staying active together.
+<br>-Discuss the importance of open communication about health within the family.
+<br>-Address common health concerns for different age groups.
+	</div>
+    </section>
+
+  </div>
+</body>
+
+</html>
+

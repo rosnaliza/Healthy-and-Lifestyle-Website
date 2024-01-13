@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      box-sizing: border-box;
+      background-image:url('loginimg.jpg');
+      background-size: cover;
+      background-position: center;
+      font-family: 'Sriracha', cursive;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+ .logo {
+      font-size: 25px;
+      font-family: 'Sriracha', cursive;
+      color: #000;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+ .logo img {
+      width: 70px;
+      height: 50px; 
+    }
+
+.logo-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    
+    .login-form {
+  text-align: center;
+  max-width: 500px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+    .login-form h2 {
+      color: #1D3124;
+    }
+
+    .login-form input {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+
+    .login-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #728C69;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .login-form p {
+      margin-top: 15px;
+      color: #1D3124;
+    }
+
+    .login-form a {
+      color: #728C69;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-form">
+    <img src="logo.jpg" alt="Logo Description">
+    <h1>Welcome to F&H</h1>
+    <h2>Login</h2>
+    <form action="homepageafter.html" method="post">
+        <input type="text" name="username" placeholder="Username" required>
+	<input type="text" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <form action="homepageafter.html" method="post">
+    <button type="submit">Login</button>
+</form>
+
+    </form>
+    <p>Don't have an account? <a href="profile.html">Sign Up</a></p>
+</div>
+
+</body>
+
+</html>
+

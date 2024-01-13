@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="group12StyleSheet.css">
+  <title>Fitness Challenge & Rewards</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+	 
+	h2 {
+	color: #333; /* Text color */
+	padding: 10px; /* Adjust as needed */
+	border-radius: 5px;
+	cursor: pointer;
+	}
+	
+	p {
+    line-height: 1.6;
+	color: #333; /* Adjust text color */
+	}
+	h1 {
+    line-height: 2,0;
+	color: #AFE1AF; /* Adjust text color */
+	}
+	
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="logo.jpg" alt="Logo Description">
+    </a>
+    <nav class="nav-items">
+      <a href="Fitness Challenge.html">Fitness Challenge & Rewards</a>
+      <a href="nutrition.html">Nutrition Navigation</a>
+      <a href="Mindful Wellness Hub.html">Mindfull Wellness Hub</a>
+      <a href="sleep.html">Sleep Bliss Guide</a>
+      <a href="holistic 3.html">Holistic Health Resources</a>
+      <a href="instructorconnector.html">Instructor</a>
+      <a href="aboutus.html">About us</a>
+      <a href="output.html">
+        <img src="profile.png" alt="Profile Image">
+        <span>Profile</span>
+      </a>
+    </nav>
+  </header>
+
+  <div class="intro-section">
+    <h1>Fitness Challenge & Rewards</h1>
+  </div>
+
+  <div class="container">
+    <div class="text-box">
+      <h2 class="title">Welcome to our Fitness Challenge & Rewards program! Embark on a journey to a healthier lifestyle with our curated challenges designed to enhance your well-being. Whether you're focusing on cardio, strength training, or flexibility, each challenge comes with its unique rewards. Achieve your fitness goals and celebrate your accomplishments with meaningful incentives. Join us on this empowering path to a healthier you</h2>
+    </div>
+    <div class="image-oval">
+      <img src="6.jpg" alt="Image">
+    </div>
+  </div>
+
+  <section id="rewardSystem">
+        <h2 onclick="toggleSection('rewardDetails')">Reward System</h2>
+        <div id="rewardDetails" class="sectionDetails">
+            <p>"Welcome to our rewarding fitness journey! At F&H, we believe in celebrating every step of your wellness adventure.
+			Our exclusive reward system is designed to motivate and applaud your dedication, 
+			offering exciting incentives as you progress towards your health and fitness goals."</p>
+            
+            <div class="reward">
+                <img src="reward1.jpg" alt="Reward 1">
+				<img src="reward2.jpg" alt="Reward 2">
+            </div>
+            <p>Rewards and How to Redeem Them</p>
+            <table>
+                <tr>
+					 <th>Reward</th>
+					 <th>Description</th>
+					<th>Redemption Criteria</th>
+				</tr>
+				<tr>
+					<td>Discount Coupon</td>
+					<td>Get a 10% discount on your next purchase.</td>
+					<td>Accumulate 100 reward points.</td>
+				</tr>
+				<tr>
+					<td>Exclusive Workout Video</td>
+					<td>Access a special workout routine video.</td>
+					<td>Complete 5 consecutive weeks of classes.</td>
+				</tr>
+				<tr>
+					<td>Free Fitness Gear</td>
+					<td>Receive a complimentary fitness accessory of your choice.</td>
+					<td>Refer three friends who join our fitness programs.</td>
+				</tr>
+
+				<tr>
+					<td>Personalized Nutrition Plan</td>
+					<td>Get a customized nutrition plan tailored to your fitness goals.</td>
+					<td>Submit a before-and-after progress photo showcasing your transformation.</td>
+				</tr>
+        </table>
+        </div>
+    </section>
+
+   
+    <section id="progressMonitoring">
+        <h2 onclick="toggleSection('progressDetails')">Progress Monitoring</h2>
+        <div id="progressDetails" class="sectionDetails">
+            <p>Embark on a transformative journey with our comprehensive progress monitoring tools and goal-setting features.
+			We provide you with the resources you need to track your fitness journey effectively.</p>
+           
+            <div class="progressVisuals">
+                <img src="Progress.jpg" alt="Progress Chart">
+            </div>
+           
+        </div>
+    </section>
+
+    
+    <section id="challengeDescriptions">
+        <h2 onclick="toggleSection('challengeDetails')">Challenge Descriptions</h2>
+        <div id="challengeDetails" class="sectionDetails">
+        <div class="boxes">
+            <div class="box">
+                <iframe width="350" height="225" src="https://www.youtube.com/embed/RsDrfeVcZC4?si=fbVBuEw9RV17Xw9O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				allowfullscreen></iframe>
+                <p class="box-title">30-Day Cardio Blast</p>
+                <p>Challenge: Complete 30 minutes of cardio exercise daily for 30 days.</p>
+                <p>Reward: Achieve a healthier heart rate, increased stamina, and a sense of accomplishment. Reward yourself with a new workout outfit or gear upon completion.</p>
+            </div>
+            <div class="box">
+                <img src="5.jpg" alt="Strength Training Marathon">
+                <p class="box-title">Strength Training Marathon</p>
+                <p>Challenge: Engage in a structured strength training routine for 6 weeks, focusing on major muscle groups.</p>
+                <p>Reward: Noticeable muscle toning, improved strength, and endurance. Reward yourself with a relaxing massage or spa session after completing the challenge.</p>
+            </div>
+            <div class="box">
+                <img src="4.jpg" alt="Flexibility and Balance Quest">
+                <p class="box-title">Flexibility and Balance Quest</p>
+                <p>Challenge: Dedicate 20 minutes every day to stretching and balance exercises for a month.</p>
+                <p>Reward: Enhanced flexibility, better posture, and increased stability. Celebrate by treating yourself to a wellness retreat or a yoga workshop.</p>
+            </div>
+        </div>
+ 
+    </div>   
+    </section>
+
+    <script> 
+	function toggleSection(sectionId) {
+    var sectionDetails = document.getElementById(sectionId);
+    sectionDetails.style.display = (sectionDetails.style.display === 'none' || sectionDetails.style.display === '') ? 'block' : 'none';
+}
+</script>
+
+</body>
+
+</html>

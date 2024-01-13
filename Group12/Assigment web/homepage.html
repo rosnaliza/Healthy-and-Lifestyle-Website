@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple HTML HomePage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+  
+
+    
+
+    body {
+      margin:0;
+      box-sizing: border-box;
+	  background-color:#BACEC1;
+    }
+
+    /* CSS for header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color:#1D3124 ;
+    }
+
+    .header .logo {
+      font-size: 25px;
+      font-family: 'Sriracha', cursive;
+      color: #000;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+	
+	.header .logo img {
+    width: 150px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height as needed */
+	}
+
+    .nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #1D3124;
+      margin-right: 20px;
+    }
+
+    .nav-items a {
+      text-decoration: none;
+      color: #ffffff;
+      padding: 15px 20px;
+	  display: flex;
+	  flex-direction: column; /* Stack the text and image vertically */
+      align-items: center; /* Center the text and image vertically */
+    }
+	
+  
+    /* Style for the hover effect */
+    .nav-items a:hover{
+   font-weight:bold;
+	color:#728C69;
+  }
+	
+	
+	/* CSS for slideshow */
+    .intro-slideshow {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 1000px;
+      overflow: hidden;
+      position: relative;
+	  margin-top:-200px;
+	  margin-bottom: -150px;
+    }
+
+    .intro {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 600px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      animation: slideShow 10s infinite; /* adjust the duration as needed */
+	  position: absolute; /* Position absolute to overlay on top of the slideshow */
+      top: 50%; /* Position from the top */
+      left: 50%; /* Position from the left */
+      transform: translate(-50%, -50%); /* Center the element */
+    }
+
+    @keyframes slideShow {
+      0% {
+        background-image: url("slideshow3.jpg"); /* First image */
+      }
+      33.33% {
+        background-image: url("slideshow2.jpg"); /* Second image */
+      }
+      66.66% {
+        background-image: url("slideshow6.jpg"); /* Third image */
+      }
+      100% {
+        background-image: url("slideshow3.jpg"); /* Back to the first image */
+      }
+    }
+
+	.intro h2 {
+      font-size: 100px;
+      color: #7f9f72;
+      margin: 10px 0;
+	  text-shadow: -2px -2px 0 #2C5f2D, 2px -2px 0 #2C5f2D, -2px 2px 0 #2C5f2D, 2px 2px 0 #2C5f2D;
+    }
+
+    .intro p {
+      font-size: 30px;
+      color: #11351E;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
+
+    .intro button {
+      background-color: #A9BA9D;
+      color: #FFFFFF;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+    }
+
+    .achievements {
+      display: flex;
+      justify-content: center;
+      align-items: wrap;
+      padding: 10px 20px;
+    }
+
+    .achievements .work {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+	  margin: 20px; /* Add margin to separate items */
+	  text-align: center; /* Center text within each work item */
+    }
+
+    .achievements .work i {
+      width: fit-content;
+      font-size: 50px;
+      color: #333333;
+      border-radius: 50%;
+      border: 2px solid #333333;
+      padding: 12px;
+    }
+
+    .achievements .work .work-heading {
+      font-size: 20px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .achievements .work .work-text {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    .about-me {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 80px;
+      border-top: 2px solid #eeeeee;
+    }
+
+    .about-me img {
+      width: 500px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .about-me-text h2 {
+      font-size: 30px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .about-me-text p {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    /* CSS for footer */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #302f49;
+      padding: 40px 80px;
+    }
+
+    .footer .copy {
+      color: #fff;
+    }
+
+    .bottom-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 0;
+    }
+
+    .bottom-links .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .bottom-links .links span {
+      font-size: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .bottom-links .links a {
+      text-decoration: none;
+      color: #a1a1a1;
+      padding: 10px 20px;
+    }
+	
+	
+	
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">
+	<img src="logo.jpg" alt="Logo Description">
+	</a>
+    <nav class="nav-items">
+		<a href="#">Sign up/ Login in</a>    	  
+    </nav>
+  </header>
+  
+  <main>
+  
+	<!-- Slideshow Section -->
+    <div class="intro-slideshow">
+		<div class="intro">
+      
+	  <h2>Healthy And Fitness</h2>
+      <p>Take care of your body. It's the only place you have to live.</p>
+      <button>Join Us</button>
+    </div>
+	</div>
+	
+    <div class="achievements">
+      <div class="work">
+        <i class="fas fa-atom"></i>
+        <p class="work-heading">TRANSFORMATION TALES</p>
+        <p class="work-text">Dive into inspiring success stories and fitness journeys that prove the impact of commitment and wellness.</p>
+      </div>
+      <div class="work">
+        <i class="fas fa-skiing"></i>
+        <p class="work-heading">FITNESS EXPERTISE</p>
+        <p class="work-text">Unlock your potential with our tailored fitness plans and expert guidance for a healthier, happier you.</p>
+      </div>
+      <div class="work">
+        <i class="fas fa-ethernet"></i>
+        <p class="work-heading">WELLNESS HUB</p>
+        <p class="work-text">Join our thriving community. Connect, motivate, and stay informed on the latest in health and fitness for a vibrant lifestyle.</p>
+      </div>
+    </div>
+    
+  </main>
+  <footer class="footer">
+    <div class="copy">&copy; 2023 F&H</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>More Info</span>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="links">
+        <span>Social Links</span>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+ 
+</body>
+
+</html>
